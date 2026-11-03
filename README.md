@@ -1,36 +1,50 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# DevTrack — Career Application Tracker
 
-## Getting Started
+A full-stack job application tracker built to help job seekers manage applications and interview schedules.
 
-First, run the development server:
+## Features
+- User registration and login
+- Supabase authentication
+- Secure user-specific records with Row Level Security
+- Add, edit, and delete applications
+- Track application statuses
+- Schedule interviews
+- Search and filter applications
+- Dashboard statistics
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## Technologies
+- Next.js 16
+- React
+- TypeScript
+- Tailwind CSS
+- Supabase
+- PostgreSQL
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Installation
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Clone the repository:
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+    git clone https://github.com/RijanrkKarki/devtrack.git
+    cd devtrack
 
-## Learn More
+Install dependencies:
 
-To learn more about Next.js, take a look at the following resources:
+    npm install
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Configure your own Supabase credentials in `.env.local`:
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+    NEXT_PUBLIC_SUPABASE_URL=your_supabase_project_url
+    NEXT_PUBLIC_SUPABASE_PUBLISHABLE_KEY=your_supabase_publishable_key
 
-## Deploy on Vercel
+Run the application:
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+    npm run dev
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Open http://localhost:3000
+
+## Database
+Supabase PostgreSQL with Row Level Security (RLS).
+
+## Author
+Rijan Karki
+GitHub: https://github.com/RijanrkKarki
